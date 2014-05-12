@@ -75,7 +75,7 @@ before_action :authenticate, except: [:index, :show]
 
 	def authenticate
 		authenticate_or_request_with_http_basic do |name, password|
-		name == "admin" && password == "secret
+		name == "admin" && password == "secret"
 	end
 	end
 end
